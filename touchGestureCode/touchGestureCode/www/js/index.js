@@ -15,14 +15,10 @@ $(document).on("pagecreate","#pageone",function(){
   	});   
 
     $('#pageone').on("Swipeleft",function(){
-        
-       $(this).hide();
-       $('#pagetwo').show();
+        $.mobile.navigate("#pagetwo");
     });
    
         $('#pagetwo').on("Swipeleft",function(){
-        
-       $(this).hide();
-       $('#pageone').show();
+            $.mobile.navigate("#pageone");
     });
 });

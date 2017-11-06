@@ -21,4 +21,12 @@ $(document).on("pagecreate","#pageone",function(){
         $('#pagetwo').on("swipeleft",function(){
             $.mobile.navigate("#pageone");
     });
+    
+    $('#pageone').on("swiperight",function(){
+        $.mobile.navigate("#pagetwo");
+    });
+   
+    $('#pagetwo').on("swiperight",function(){
+        $.mobile.navigate("#pageone");
+    });
 });

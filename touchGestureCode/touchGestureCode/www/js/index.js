@@ -14,11 +14,11 @@ $(document).on("pagecreate","#pageone",function(){
     	$(this).css('color', 'green');
   	});   
 
-    $('#pageone').on("Swipeleft",function(){
+    $('#pageone').on("swipeleft",function(){
         $.mobile.navigate("#pagetwo");
     });
    
-        $('#pagetwo').on("Swipeleft",function(){
+        $('#pagetwo').on("swipeleft",function(){
             $.mobile.navigate("#pageone");
     });
 });

@@ -14,5 +14,15 @@ $(document).on("pagecreate","#pageone",function(){
     	$(this).css('color', 'green');
   	});   
 
-
+    $('#pageone').on("Swipeleft",function(){
+        
+       $(this).hide();
+       $('#pagetwo').show();
+    });
+   
+        $('#pagetwo').on("Swipeleft",function(){
+        
+       $(this).hide();
+       $('#pageone').show();
+    });
 });
